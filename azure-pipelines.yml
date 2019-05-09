@@ -17,7 +17,7 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 # ...
 # do this after other tasks such as building
-- task: DotNetCoreCLI
+- task: DotNetCoreCLI@3
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
